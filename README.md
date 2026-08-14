@@ -223,37 +223,15 @@ Result    : ✅ All systems verified
 
 ## 08 · Troubleshooting Journal
 
-1. Kali boots but has no internet access
-Usually the NAT Network adapter isn't attached correctly, or DHCP isn't assigning an address yet.
+**1. Kali boots but has no internet access**
+Usually, the NAT Network adapter isn't connected correctly, or DHCP hasn't assigned an address yet.
 
 Check: ip a — if there's no IP on eth0, run sudo dhclient eth0
 Confirm the VM's Settings → Network → Adapter 1 is set to "NAT Network" and "NatNetwork," not plain "NAT"
 Confirm the NAT Network itself has DHCP enabled in VirtualBox's Network Manager
 
-2. Static IP set correctly, but internet drops
+**2. Static IP set correctly, but internet drops**
 This is the DAD-timeout issue you already have documented — nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0 — but the connection name may differ on your system (Wired connection 1 vs eth0 vs something custom). Run nmcli connection show first to get the exact name.
-
-3. Screen resolution stuck / display too small
-Common after fresh import. Fix: Devices → Insert Guest Additions CD, then inside Kali:
-
-bash
-sudo apt update && sudo apt install -y virtualbox-guest-additions-iso
-sudo /media/cdrom/VBoxLinuxAdditions.run
-
-Reboot the VM afterward.
-
-4. Clipboard/shared-folder not working between host and Kali
-Guest Additions again — same install as above also enables bidirectional clipboard and drag-and-drop, but you must also enable it manually: Settings → General → Advanced → Shared Clipboard → Bidirectional.
-
-5. apt update fails or is extremely slow
-DNS resolution issue, not a mirror issue. Check /etc/resolv.conf has nameserver 8.8.8.8; if it's empty or wrong, that's the cause.
-
-6. VM freezes or lags heavily
-2048 MB RAM is tight for Kali with a GUI. If you have host RAM to spare, bump it to 4096 MB in Settings → System → Motherboard.
-
-7. Time/clock drift causing SSL or apt errors
-VMs commonly desync time after being paused/resumed. Fix: sudo timedatectl set-ntp true or manually sync with sudo hwclock -s.
----
 
 ## 09 · Key Takeaways
 
