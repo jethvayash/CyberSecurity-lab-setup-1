@@ -4,7 +4,7 @@
 
 ### *A Self-Directed Systems Project in Offensive Security Infrastructure*
 
-**Author:** [Your Name] · BSc Information Technology
+**Author:** [Yash Jethva] · BSc Information Technology
 **Focus Areas:** Ethical Hacking · Red Teaming · Network Security · Digital Forensics
 
 </div>
