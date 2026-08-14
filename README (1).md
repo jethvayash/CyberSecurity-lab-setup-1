@@ -122,13 +122,13 @@ Additional target machines (DVWA, Metasploitable, vulnerable web apps, etc.) can
 
 | 🧩 Component        | ⚙️ Configuration        |
 | -------------------- | ------------------------ |
-| 🖥️ Host OS           | *(e.g. Windows 11 / Ubuntu 24.04)* |
-| 🧠 Host RAM           | *(e.g. 8–16 GB)*         |
-| ⚡ Processor          | *(e.g. Intel Core i5/i7)*|
+| 🖥️ Host OS           | Windows 11 |
+| 🧠 Host RAM           | 16gb         |
+| ⚡ Processor          | Intel Core i7 |
 | 🧰 Hypervisor         | VirtualBox 7.2           |
 | 🐉 Security OS        | Kali Linux 2026.2        |
-| 🧠 Kali RAM            | 2048 MB                  |
-| 💾 Kali Disk           | *(e.g. 40 GB dynamic)*   |
+| 🧠 Kali RAM            | 11100 MB                  |
+| 💾 Kali Disk           | 80 GB dynamic   |
 | 🌐 Virtual Network    | NAT Network               |
 | 📡 Network Address    | 10.0.0.0/24               |
 | 🐧 Kali IP Address    | 10.0.0.2/24                |
