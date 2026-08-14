@@ -135,13 +135,13 @@ This is intentionally treated as an **infrastructure project first, a hacking pr
 
 | 🧩 Component | ⚙️ Configuration |
 |---|---|
-| 🖥️ Host OS | *(e.g. Windows 11 Pro / Ubuntu 24.04 LTS)* |
-| 🧠 Host RAM | *(e.g. 16 GB)* |
-| ⚡ Host CPU | *(e.g. Intel Core i7, 8 cores)* |
+| 🖥️ Host OS |  Windows 11 Pro |
+| 🧠 Host RAM |  16 GB |
+| ⚡ Host CPU |  Intel Core i7, 8 cores)* |
 | 🧰 Hypervisor | VirtualBox 7.2 |
 | 🐉 Guest OS | Kali Linux 2026.2 |
-| 🧠 Guest RAM | 2048 MB |
-| 💾 Guest Storage | *(e.g. 40 GB dynamic)* |
+| 🧠 Guest RAM | 11100 MB |
+| 💾 Guest Storage |  80 GB dynamic |
 | 🌐 Network Type | NAT Network |
 | 📡 Segment CIDR | 10.0.0.0/24 |
 | 🐧 Kali IP | 10.0.0.2/24 |
@@ -281,7 +281,7 @@ Connection restarted, connectivity confirmed.
 
 ## 12 · Contact
 
-**[Your Name]**
+**[Yash Jethva]**
 BSc Information Technology · Aspiring Cybersecurity & Red Team Professional
 
 📎 GitHub — `github.com/yourusername`
